@@ -1,0 +1,96 @@
+*{padding: 0;
+    margin: 0;
+    }
+
+body{
+    
+    font-family: 'Montserrat, sans-serif';
+    /* font-family:Arial, Helvetica, sans-serif; */
+}
+
+.menu{
+    background-color: palevioletred;
+    height: 150px;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+
+
+
+.nav-link{
+    color: white !important;
+    
+}
+
+.line {
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+a:hover + .line{
+    width: 100%;
+    visibility: visible;
+}
+
+.hamburgMenu{
+    display: none !important ;
+    color: white;
+}
+
+.animasyon{
+    animation: slideInLeft;
+  animation-duration: .5s; 
+}
+
+
+
+
+@media screen and (max-width: 990px){
+    .hamburgMenu{
+        display: block !important;
+        z-index: 999;
+        cursor: pointer;
+    }
+    .collapse{
+        position: absolute ;
+        right: 0px ;
+        top: 0px ;
+        width: 100% ;
+        height: 100vh;
+        display: none;
+        background-color:palevioletred;
+       
+    }
+    
+    .ac-kapa{
+        display: flex !important;
+    
+    }
+
+
+}
+
+.navbar-nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item{
+    margin-bottom: 35px;
+    font-size: 24px;    
+}
+
+
+.isimLogoKapat{
+display: none !important;
+}
+
+nav ul li:hover{
+    color: white;
+    background-color:grey ;
+
+}
